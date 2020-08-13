@@ -3,7 +3,7 @@
 	"private": "true",
 	"type": "module",
 	"sideEffects": false,
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
 	"input": "./src/js/index.js",
 	"style": "./dist/styles.css",
