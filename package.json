@@ -13,13 +13,13 @@
 	"moduleName": "javascriptModuleTemplate",
 	"scripts": {
 		"clean": "rimraf dist",
-		"pre-build": "npm run clean",
-		"build": "npm run pre-build && rollup -c && npm run post-build",
-		"post-build": "",
+		"prebuild": "npm run clean",
+		"build": "npm run prebuild && rollup -c && npm run postbuild",
+		"postbuild": "",
 		"generate:docs": "jsdoc --configure .jsdoc.json --verbose",
 		"preversion": "npm test",
 		"version": "npm run build && npm run generate:docs && git add .",
-		"postversion": "git push --tags",
+		"postversion": "",
 		"test": "jest"
 	},
 	"repository": {
